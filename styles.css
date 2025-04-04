@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top Bar & Links */
+.top-bar, .top-links {
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.top-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.top-links a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-left: auto;
+}
+
+.social-icons img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.logo {
+    height: 120px;
+    margin-right: 10px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #700000;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #004080;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; /* Ensures even spacing */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0;
+    flex: 1; /* Equal width for all menu items */
+    text-align: center; /* Center align text */
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 8px 20px 8px 12px; /* Adjust spacing */
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Reduces space between text and arrow */
+}
+
+/* Custom Dropdown Arrow */
+.dropdown::after {
+    content: "▼";
+    font-size: 12px;
+    color: white;
+    margin-left: 5px;
+}
+
+/* Hover Effect */
+.dropdown:hover {
+    color: red;
+}
+
+/* Special Styling for HOME Link */
+.navbar ul li:first-child a {
+    color: red;
+}
